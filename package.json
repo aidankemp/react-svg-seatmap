@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
+  "repository": "github:aidankemp/react-svg-seatmap",
   "exports": {
     ".": {
       "import": "./dist/index.js",
