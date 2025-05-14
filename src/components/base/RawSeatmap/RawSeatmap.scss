@@ -1,0 +1,127 @@
+.seatmap {
+  background-color: #eceae6;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  &__svg {
+    width: 100%;
+    height: 100%;
+
+    svg {
+      min-height: 65vh;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    position: absolute;
+
+    &--left {
+      top: 15px;
+      left: 15px;
+    }
+
+    &--right {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  &__action-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  &__action {
+    background: none;
+    border: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    &:hover {
+      background-color: #112e72;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: #0a1e4d;
+      color: #d0d0d0;
+    }
+
+    &--selected {
+      background-color: #4876e1;
+      color: #fff;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    pointer-events: none;
+  }
+}
+
+.seat {
+  &--unavailable {
+    fill: #bfbfbf !important;
+    stroke: none !important;
+  }
+
+  &--available {
+    stroke: #976bbd !important;
+    stroke-width: 3 !important;
+    fill: #fff !important;
+    cursor: pointer;
+  }
+
+  &--selected {
+    fill: #976bbd !important;
+    stroke-width: 3 !important;
+    stroke: #976bbd !important;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &--hover {
+    opacity: 0.6;
+  }
+}

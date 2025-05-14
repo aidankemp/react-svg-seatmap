@@ -1,0 +1,1385 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.32 52.094 532.112 377.36">
+  <rect
+    style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 2px"
+    x="157.294"
+    y="193.225"
+    width="194.26"
+    height="88.466"
+    rx="5"
+    ry="5"
+  ></rect>
+  <defs></defs>
+  <text
+    style="
+      fill: rgb(51, 51, 51);
+      font-family: Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+    "
+    x="220.772"
+    y="244.265"
+  >
+    STAGE
+  </text>
+  <ellipse
+    style="stroke: rgb(0, 0, 0)"
+    cx="118.124"
+    cy="206.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-1"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="118.124"
+    cy="226.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-2"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="118.124"
+    cy="266.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-4"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="93.124"
+    cy="206.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-6"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="93.124"
+    cy="226.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-7"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="93.124"
+    cy="246.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-8"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="93.124"
+    cy="266.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-9"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.124"
+    cy="206.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-13"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.124"
+    cy="226.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-14"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.124"
+    cy="246.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-15"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.124"
+    cy="266.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-16"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="43.124"
+    cy="206.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-22"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="43.124"
+    cy="226.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-23"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="43.124"
+    cy="246.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-24"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="43.124"
+    cy="266.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-25"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="18.124"
+    cy="206.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-34"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="18.124"
+    cy="246.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-35"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="18.124"
+    cy="266.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-36"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="283.072"
+    cy="100.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-20"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="283.072"
+    cy="120.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-21"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="283.072"
+    cy="140.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-22"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="283.072"
+    cy="160.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-23"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="258.072"
+    cy="100.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-24"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="258.072"
+    cy="120.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-25"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="258.072"
+    cy="140.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-26"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="258.072"
+    cy="160.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-27"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="233.072"
+    cy="100.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-28"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="233.072"
+    cy="120.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-29"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="233.072"
+    cy="140.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-30"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="233.072"
+    cy="160.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-31"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="208.072"
+    cy="100.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-32"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="208.072"
+    cy="120.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-33"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="208.072"
+    cy="140.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-34"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="208.072"
+    cy="160.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-35"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="183.072"
+    cy="100.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-36"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="183.072"
+    cy="120.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-37"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="183.072"
+    cy="140.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-38"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="183.072"
+    cy="160.676"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-39"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="43.083"
+    cy="186.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-21"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="18.083"
+    cy="186.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-32"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.11"
+    cy="186.21"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-12"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="42.878"
+    cy="166.573"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-20"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="19.105"
+    cy="145.634"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-30"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="92.042"
+    cy="187.037"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-5"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="68.326"
+    cy="167.277"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-11"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="44.069"
+    cy="145.575"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-19"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="19.581"
+    cy="124.238"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-29"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="44.395"
+    cy="-286.17"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-26"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="19.395"
+    cy="-286.17"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-37"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="19.422"
+    cy="-306.17"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-38"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="69.422"
+    cy="-286.17"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-17"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="44.19"
+    cy="-305.81"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-27"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="20.417"
+    cy="-326.75"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-39"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="93.354"
+    cy="-285.34"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-10"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="69.638"
+    cy="-305.1"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-18"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="45.381"
+    cy="-326.8"
+    rx="6.21"
+    ry="6.21"
+    id="seat-stalls-left-28"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="214.648"
+    cy="302.307"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-44"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="189.648"
+    cy="302.307"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-48"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="214.565"
+    cy="326.21"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-45"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="189.565"
+    cy="326.21"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-46"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="214.719"
+    cy="348.47"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-52"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="189.719"
+    cy="348.47"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-53"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="214.636"
+    cy="372.373"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-60"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="189.636"
+    cy="372.373"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-61"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="165.721"
+    cy="325.539"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-65"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="165.875"
+    cy="347.799"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-66"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="165.792"
+    cy="371.702"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-67"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="141.428"
+    cy="348.331"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-64"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="141.345"
+    cy="372.234"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-68"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="116.993"
+    cy="372.271"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-40"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="214.058"
+    cy="394.948"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-41"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="189.058"
+    cy="394.948"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-42"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="165.214"
+    cy="394.277"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-43"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="140.767"
+    cy="394.809"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-50"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="116.415"
+    cy="394.846"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-51"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="94.036"
+    cy="394.508"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-58"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-288.19"
+    cy="300.666"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-47"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-313.19"
+    cy="300.666"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-49"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-288.27"
+    cy="324.569"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-54"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-313.27"
+    cy="324.569"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-55"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-288.12"
+    cy="346.829"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-56"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-313.12"
+    cy="346.829"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-57"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-288.2"
+    cy="370.732"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-59"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-313.2"
+    cy="370.732"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-62"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-337.12"
+    cy="323.898"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-63"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-336.96"
+    cy="346.158"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-69"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-337.05"
+    cy="370.061"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-70"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-361.41"
+    cy="346.69"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-71"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-361.49"
+    cy="370.593"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-72"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-385.84"
+    cy="370.63"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-73"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-288.78"
+    cy="393.307"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-74"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-313.78"
+    cy="393.307"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-75"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-337.62"
+    cy="392.636"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-76"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-362.07"
+    cy="393.168"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-77"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-386.42"
+    cy="393.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-78"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-408.8"
+    cy="392.867"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-79"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-392.76"
+    cy="207.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-100"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-392.76"
+    cy="227.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-101"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-392.76"
+    cy="247.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-102"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-392.76"
+    cy="267.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-103"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-417.76"
+    cy="207.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-104"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-417.76"
+    cy="227.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-105"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-417.76"
+    cy="247.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-106"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-417.76"
+    cy="267.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-107"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.76"
+    cy="207.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-108"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.76"
+    cy="227.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-109"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.76"
+    cy="247.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-110"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.76"
+    cy="267.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-111"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-467.76"
+    cy="207.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-112"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-467.76"
+    cy="227.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-113"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-467.76"
+    cy="247.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-114"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-467.76"
+    cy="267.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-115"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.76"
+    cy="207.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-116"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.76"
+    cy="227.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-117"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.76"
+    cy="247.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-118"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.76"
+    cy="267.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-119"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-467.8"
+    cy="187.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-120"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.8"
+    cy="187.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-121"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-492.77"
+    cy="167.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-122"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.77"
+    cy="187.205"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-123"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-468"
+    cy="167.568"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-124"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-491.77"
+    cy="146.629"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-125"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-418.84"
+    cy="188.032"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-126"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-442.55"
+    cy="168.272"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-127"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-466.81"
+    cy="146.57"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-128"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-491.3"
+    cy="125.233"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-129"
+    transform="matrix(-1, 0, 0, 1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-466.48"
+    cy="-287.17"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-130"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-491.48"
+    cy="-287.17"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-131"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-491.46"
+    cy="-307.17"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-132"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-441.46"
+    cy="-287.17"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-133"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-466.69"
+    cy="-306.81"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-134"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-490.46"
+    cy="-327.75"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-135"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-417.53"
+    cy="-286.33"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-136"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-441.24"
+    cy="-306.1"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-137"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-465.5"
+    cy="-327.8"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-138"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="-489.99"
+    cy="-349.13"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-139"
+    transform="matrix(-1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="331.969"
+    cy="102.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-144"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="331.969"
+    cy="122.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-145"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="331.969"
+    cy="142.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-146"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="331.969"
+    cy="162.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-147"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="306.969"
+    cy="102.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-148"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="306.969"
+    cy="122.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-149"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="306.969"
+    cy="142.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-150"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="306.969"
+    cy="162.287"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-151"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="159.28"
+    cy="100.787"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-140"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="159.28"
+    cy="120.787"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-141"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="354.524"
+    cy="102.668"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-142"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="354.524"
+    cy="122.668"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-143"
+  ></ellipse>
+  <rect
+    x="3.044"
+    y="324.35"
+    width="32.384"
+    height="134.295"
+    style="
+      fill: rgb(216, 216, 216);
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      paint-order: fill;
+      stroke-dasharray: 4;
+      stroke: rgb(0, 0, 0);
+    "
+    transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 77.920016, -56.32657)"
+  ></rect>
+  <rect
+    x="3.044"
+    y="324.35"
+    width="32.384"
+    height="134.295"
+    style="
+      fill: rgb(216, 216, 216);
+      stroke-width: 1;
+      transform-origin: 19.236px 391.498px;
+      paint-order: fill;
+      stroke-dasharray: 4;
+      stroke: rgb(0, 0, 0);
+    "
+    transform="matrix(-0.707107, 0.707107, 0.707107, 0.707107, 391.708918, -52.012373)"
+  ></rect>
+  <rect
+    x="3.044"
+    y="324.35"
+    width="32.384"
+    height="134.295"
+    style="
+      fill: rgb(216, 216, 216);
+      stroke-width: 1;
+      transform-origin: 19.236px 391.498px;
+      paint-order: fill;
+      stroke-dasharray: 4;
+      stroke: rgb(0, 0, 0);
+    "
+    transform="matrix(0.707107, -0.707107, -0.707107, -0.707107, 81.430917, -259.852302)"
+  ></rect>
+  <rect
+    x="-3.044"
+    y="-324.35"
+    width="32.384"
+    height="134.295"
+    style="
+      fill: rgb(216, 216, 216);
+      stroke-width: 1;
+      transform-origin: 13.148px -257.202px;
+      paint-order: fill;
+      stroke-dasharray: 4;
+      stroke: rgb(0, 0, 0);
+    "
+    transform="matrix(-0.707107, -0.707107, 0.707107, -0.707107, 402.373937, 385.474921)"
+  ></rect>
+  <rect
+    x="242.01"
+    y="-403.76"
+    width="21.932"
+    height="104.707"
+    style="
+      fill: rgb(216, 216, 216);
+      stroke-width: 1;
+      paint-order: fill;
+      stroke-dasharray: 4;
+      stroke: rgb(0, 0, 0);
+      transform-origin: 252.976px -351.409px;
+    "
+    transform="matrix(1, 0, 0, -1, 0, 702.817322)"
+  ></rect>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="117.882"
+    cy="246.122"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-1"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="17.804"
+    cy="166.632"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-2"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="18.057"
+    cy="225.467"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-3"
+  ></ellipse>
+  <ellipse
+    style="stroke: rgb(0, 0, 0); stroke-width: 1"
+    cx="20.823"
+    cy="-348.57"
+    rx="6.21"
+    ry="6.21"
+    id="ellipse-4"
+    transform="matrix(1, 0, 0, -1, 0, 0)"
+  ></ellipse>
+</svg>
