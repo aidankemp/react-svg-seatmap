@@ -1,12 +1,15 @@
 {
   "name": "react-svg-seatmap",
   "description": "React components that render a highly-customizable seatmap based on a provided SVG",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "license": "MIT",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
-  "repository": "github:aidankemp/react-svg-seatmap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidankemp/react-svg-seatmap.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
