@@ -312,10 +312,10 @@ export const RawSeatmap = ({
               >
                 <svg
                   className="seatmap__icon seatmap__icon--zoom-in"
-                  viewBox="0 0 16 16"
+                  viewBox="0 -960 960 960"
                 >
                   <title>Zoom In</title>
-                  <path d="M12.8 8c0 0.442-0.038 0.8-0.481 0.8h-3.519v3.519c0 0.442-0.358 0.481-0.8 0.481s-0.8-0.039-0.8-0.481v-3.519h-3.519c-0.442 0-0.481-0.358-0.481-0.8s0.039-0.8 0.481-0.8h3.519v-3.519c0-0.442 0.358-0.481 0.8-0.481s0.8 0.038 0.8 0.481v3.519h3.519c0.442 0 0.481 0.358 0.481 0.8z"></path>
+                  <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
                 </svg>
               </button>
               <button
@@ -325,11 +325,11 @@ export const RawSeatmap = ({
                 title="Reset Zoom"
               >
                 <svg
-                  className="seatmap__icon seatmap__icon--close"
-                  viewBox="0 0 16 16"
+                  className="seatmap__icon seatmap__icon--reset"
+                  viewBox="0 -960 960 960"
                 >
-                  <title>Close</title>
-                  <path d="M12.656 4.281l-3.719 3.719 3.719 3.719-0.938 0.938-3.719-3.719-3.719 3.719-0.938-0.938 3.719-3.719-3.719-3.719 0.938-0.938 3.719 3.719 3.719-3.719z"></path>
+                  <title>Reset zoom</title>
+                  <path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z" />
                 </svg>
               </button>
               <button
@@ -340,10 +340,10 @@ export const RawSeatmap = ({
               >
                 <svg
                   className="seatmap__icon seatmap__icon--zoom-out"
-                  viewBox="0 0 16 16"
+                  viewBox="0 -960 960 960"
                 >
                   <title>Zoom Out</title>
-                  <path d="M12.8 8c0 0.442-0.038 0.8-0.481 0.8h-8.638c-0.442 0-0.481-0.358-0.481-0.8s0.039-0.8 0.481-0.8h8.639c0.442 0 0.48 0.358 0.48 0.8z"></path>
+                  <path d="M200-440v-80h560v80H200Z" />
                 </svg>
               </button>
             </div>
