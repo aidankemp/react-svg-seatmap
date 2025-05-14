@@ -1,7 +1,7 @@
 {
   "name": "react-svg-seatmap",
   "description": "React components that render a highly-customizable seatmap based on a provided SVG",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "license": "MIT",
   "main": "./dist/index.umd.cjs",
