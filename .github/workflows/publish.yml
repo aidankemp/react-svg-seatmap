@@ -1,7 +1,9 @@
 name: Publish Package to NPM
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,6 +12,8 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@v11.0.7
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
