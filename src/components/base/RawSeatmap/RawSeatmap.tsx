@@ -180,15 +180,18 @@ export const RawSeatmap = ({
     );
 
     circles.forEach((target) => {
-      target.removeEventListener("click", handleClick);
-      target.addEventListener("click", handleClick);
+      target.removeEventListener("pointerdown", handleClick);
+      target.removeEventListener("mouseover", handleHover);
+      target.removeEventListener("mouseout", handleHover);
+
+      target.addEventListener("pointerdown", handleClick);
       target.addEventListener("mouseover", handleHover);
       target.addEventListener("mouseout", handleHover);
     });
 
     return () => {
       circles.forEach((circle) => {
-        circle.removeEventListener("click", handleClick);
+        circle.removeEventListener("pointerdown", handleClick);
         circle.removeEventListener("mouseover", handleHover);
         circle.removeEventListener("mouseout", handleHover);
       });

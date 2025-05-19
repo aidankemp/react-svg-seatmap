@@ -74,11 +74,6 @@
       border-top: 0;
     }
 
-    &:hover {
-      background-color: #112e72;
-      color: #fff;
-    }
-
     &:active {
       background-color: #0a1e4d;
       color: #d0d0d0;
@@ -87,6 +82,18 @@
     &--selected {
       background-color: #4876e1;
       color: #fff;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #eceae6;
+        color: #000;
+      }
+
+      &--selected:hover {
+        background-color: #3960b9;
+        color: #fff;
+      }
     }
   }
 
