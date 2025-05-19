@@ -1,6 +1,8 @@
 # react-svg-seatmap
 
-React components built to use SVG seatmaps as form inputs.
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://main--682ae2c9f2c76f03d83a3852.chromatic.com) ![NPM Version](https://img.shields.io/npm/v/react-svg-seatmap)
+
+React components that render a highly-customizable seatmap based on a provided SVG.
 
 This package includes:
 
@@ -8,6 +10,8 @@ This package includes:
 - `SeatmapAccordion`: Use an SVG seatmap as a navigational tool for showing seat details
 
 ![summary](https://github.com/user-attachments/assets/e5dfef08-6068-44fe-9ec7-b0e1c35926d3)
+
+Check it out here: [Storybook](https://main--682ae2c9f2c76f03d83a3852.chromatic.com)
 
 ## Features
 
