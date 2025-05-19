@@ -15,10 +15,9 @@ jobs:
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@v11.0.7
         with:
-          tag-prefix: "v"
+          skip-tag: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v4
         with:
           node-version: "20.x"
