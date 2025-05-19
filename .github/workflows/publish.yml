@@ -15,7 +15,9 @@ jobs:
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@v11.0.7
         with:
-          skip-tag: "true"
+          major-wording: "MAJOR"
+          minor-wording: "MINOR"
+          patch-wording: "RELEASE"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v4
