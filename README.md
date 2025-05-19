@@ -1,6 +1,6 @@
 # react-svg-seatmap
 
-[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://main--682ae2c9f2c76f03d83a3852.chromatic.com) ![NPM Version](https://img.shields.io/npm/v/react-svg-seatmap)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://main--682ae2c9f2c76f03d83a3852.chromatic.com) [![NPM Version](https://img.shields.io/npm/v/react-svg-seatmap)](https://www.npmjs.com/package/react-svg-seatmap)
 
 React components that render a highly-customizable seatmap based on a provided SVG.
 
