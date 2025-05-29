@@ -5,10 +5,12 @@ import dts from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({
+  publicDir: false,
   plugins: [
     react(),
     dts({
       tsconfigPath: "./tsconfig.app.json",
+      exclude: ["**/*.stories.tsx", "**/fixtures/**"],
     }),
   ],
   build: {
@@ -18,10 +20,22 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: ["react"],
+      external: [
+        "react",
+        "react-dom",
+        "lodash",
+        "react-selecto",
+        "svg-pan-zoom",
+        "**/*.stories.tsx",
+        "**/fixtures/**",
+      ],
       output: {
         globals: {
           react: "React",
+          "react-dom": "ReactDOM",
+          lodash: "lodash",
+          "react-selecto": "Selecto",
+          "svg-pan-zoom": "svgPanZoom",
         },
       },
     },
