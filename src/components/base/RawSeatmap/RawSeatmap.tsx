@@ -5,6 +5,7 @@ import "./RawSeatmap.scss";
 import svgPanZoom from "svg-pan-zoom";
 import _ from "lodash";
 import { usePrevious } from "../../../utils/usePrevious";
+import { SeatmapControl } from "../../../types/SeatmapControl.types";
 
 export const RawSeatmap = ({
   availableSeats,
@@ -271,6 +272,25 @@ export const RawSeatmap = ({
     setSeatColour,
   ]);
 
+  // Take a SeatmapControl object and return the appropriate JSX element
+  // This allows users to specify if the control group should be styled or not
+  const generateSeatmapControl = (control: SeatmapControl) => {
+    if (control && typeof control === "object" && "style" in control) {
+      console.log("Control is an object with style", control.style);
+      return (
+        <div
+          className={
+            "seatmap__action-group" +
+            (control.style === "none" ? " seatmap__action-group--unstyled" : "")
+          }
+        >
+          {control.control}
+        </div>
+      );
+    }
+    return <div className="seatmap__action-group">{control}</div>;
+  };
+
   // We need to memoize the main SVG content separately from the rest of the component to ensure
   // that it NEVER changes unless the SVG itself changes.
   // This is because the SVG pan and zoom library (as well as our seat painting method)
@@ -351,15 +371,11 @@ export const RawSeatmap = ({
               </button>
             </div>
           )}
-          {leftControls?.map((control) => (
-            <div className="seatmap__action-group">{control}</div>
-          ))}
+          {leftControls?.map((control) => generateSeatmapControl(control))}
         </div>
         {memoizedSvg}
         <div className="seatmap__actions seatmap__actions--right">
-          {rightControls?.map((control) => (
-            <div className="seatmap__action-group">{control}</div>
-          ))}
+          {rightControls?.map((control) => generateSeatmapControl(control))}
         </div>
       </div>
     );

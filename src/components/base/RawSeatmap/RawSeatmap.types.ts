@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { SeatmapControl } from "../../../types/SeatmapControl.types";
 
 export interface SeatDisplay {
   id: number;
@@ -14,8 +15,8 @@ export interface RawSeatmapProps {
   svg: string;
   showZoomControls?: boolean;
   allowDragAndPan?: boolean;
-  leftControls?: ReactNode[];
-  rightControls?: ReactNode[];
+  leftControls?: SeatmapControl[];
+  rightControls?: SeatmapControl[];
   onSeatSelect?: (selectedSeat: SeatDisplay) => void;
   onSeatDeselect?: (selectedSeat: SeatDisplay) => void;
   onSeatHover?: (hoveredSeat: SeatDisplay) => void;

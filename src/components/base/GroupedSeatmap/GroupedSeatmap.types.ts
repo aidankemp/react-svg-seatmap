@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { SeatmapControl } from "../../../types/SeatmapControl.types";
 
 export interface GroupedSeat {
   id: number;
@@ -14,8 +15,8 @@ export interface GroupedSeatmapProps {
   displayGroupMapping?: Record<string, string | ReactNode>;
   onSeatSelect?: (selectedSeats: GroupedSeat[]) => void;
   onSeatDeselect?: (deselectedSeats: GroupedSeat[]) => void;
-  leftControls?: ReactNode[];
-  rightControls?: ReactNode[];
+  leftControls?: SeatmapControl[];
+  rightControls?: SeatmapControl[];
   withGroupSelection?: boolean; // Whether to enable group selection
   withDragSelection?: boolean; // Whether to enable drag selection
 }
