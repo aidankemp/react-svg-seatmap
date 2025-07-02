@@ -21,6 +21,7 @@ export const RawSeatmap = ({
   rightControls,
 }: RawSeatmapProps) => {
   const [svgString, setSvgContent] = useState<string>("");
+  const [svgFetchingError, setSvgFetchingError] = useState(false);
   const [mapNeedsPainting, setMapNeedsPainting] = useState(false);
   const previousState = usePrevious({
     svgString,
@@ -58,9 +59,17 @@ export const RawSeatmap = ({
   // Fetch the SVG content from the provided URL
   useEffect(() => {
     fetch(svg)
-      .then((res) => res.text())
+      .then((res) => {
+        if (res.ok) {
+          return res.text();
+        }
+        throw new Error("Unable to fetch SVG");
+      })
       .then((text) => setSvgContent(text))
-      .catch((err) => console.error("Failed to load SVG:", err));
+      .catch((err) => {
+        setSvgFetchingError(true);
+        console.error("Failed to load SVG:", err);
+      });
   }, [svg]);
 
   // For a given SVG element, set the colour based on the seat's availability and selection status
@@ -96,13 +105,12 @@ export const RawSeatmap = ({
 
   // Set the initial colour of each seat on the SVG
   useEffect(() => {
-    if (!svgString) {
-      console.log("No SVG, exiting");
+    if (!svgString || svgFetchingError) {
+      console.error("No SVG, exiting");
       return;
     }
 
     if (mapNeedsPainting) {
-      console.log("SVG changed, repainting all seats...");
       const circles = document.querySelectorAll<SVGCircleElement>(
         ".seatmap__svg circle, .seatmap__svg path, .seatmap__svg ellipse"
       );
@@ -113,27 +121,29 @@ export const RawSeatmap = ({
         setSeatColour(circle, foundSeat);
       });
 
-      console.log("Finished initial paint of SVG");
-
       setMapNeedsPainting(false);
     }
-  }, [mapNeedsPainting, matchingSeat, setSeatColour, svgString]);
+  }, [
+    mapNeedsPainting,
+    matchingSeat,
+    setSeatColour,
+    svgString,
+    svgFetchingError,
+  ]);
 
   // Setup the pan and zoom functionality on the SVG element
   useEffect(() => {
-    if (!svgString) return;
+    if (!svgString || svgFetchingError) return;
 
     const panZoom = getSVGPanZoom();
     panZoom.resize();
     panZoom.center();
     panZoom.fit();
-  }, [svgString, getSVGPanZoom]);
+  }, [svgString, getSVGPanZoom, svgFetchingError]);
 
   // Update the pan and zoom functionality if the related props change
   useEffect(() => {
-    if (!svgString) return;
-
-    console.log("Updating pan and zoom...", allowDragAndPan);
+    if (!svgString || svgFetchingError) return;
 
     const panZoom = getSVGPanZoom();
     if (!allowDragAndPan) {
@@ -141,7 +151,7 @@ export const RawSeatmap = ({
     } else {
       panZoom.enablePan();
     }
-  }, [svgString, allowDragAndPan, getSVGPanZoom]);
+  }, [svgString, allowDragAndPan, getSVGPanZoom, svgFetchingError]);
 
   // When the state changes, the event listeners won't naturally pick up the state changes.
   // Consequently, the event listeners need to be replaced with new ones
@@ -210,9 +220,7 @@ export const RawSeatmap = ({
   // Doing this for every seat is highly time-consuming, so we optimize the paint by
   // only repainting the seats that have changed.
   useEffect(() => {
-    if (!svgString) return;
-
-    // console.log("Updating available seats...");
+    if (!svgString || svgFetchingError) return;
 
     const changedSeats = availableSeats.filter((seat) => {
       const previousSeat = previousState?.availableSeats.find(
@@ -229,13 +237,16 @@ export const RawSeatmap = ({
       if (!seatDisplayElement) continue;
       setSeatColour(seatDisplayElement, seat);
     }
-
-    // console.log("Finished updating available seats");
-  }, [availableSeats, previousState?.availableSeats, setSeatColour, svgString]);
+  }, [
+    availableSeats,
+    previousState?.availableSeats,
+    setSeatColour,
+    svgString,
+    svgFetchingError,
+  ]);
 
   // Update the style of seats that have been selected
   useEffect(() => {
-    // console.log("Updating selected seats...");
     // Find all differences between the previous and current selected seats
     let changedSeatIds = selectedSeatIds || [];
     if (selectedSeatIds && previousState?.selectedSeatIds) {
@@ -264,7 +275,6 @@ export const RawSeatmap = ({
 
       setSeatColour(seatDisplayElement, seatDisplay);
     }
-    // console.log("Finished updating selected seats");
   }, [
     availableSeats,
     previousState?.selectedSeatIds,
@@ -276,7 +286,6 @@ export const RawSeatmap = ({
   // This allows users to specify if the control group should be styled or not
   const generateSeatmapControl = (control: SeatmapControl) => {
     if (control && typeof control === "object" && "style" in control) {
-      console.log("Control is an object with style", control.style);
       return (
         <div
           className={
@@ -306,7 +315,7 @@ export const RawSeatmap = ({
   }, [svgString]);
 
   // Memoize the main HTML structure to avoid unnecessary re-renders
-  return useMemo(() => {
+  const returnValue = useMemo(() => {
     const handleZoomIn = () => {
       getSVGPanZoom().zoomIn();
     };
@@ -386,4 +395,17 @@ export const RawSeatmap = ({
     memoizedSvg,
     showZoomControls,
   ]);
+
+  // If the SVG could not be fetched, return an error message
+  if (svgFetchingError) {
+    return (
+      <div className="seatmap">
+        <div className="seatmap__error">
+          ERROR: Unable to fetch SVG from the given URL: {svg}
+        </div>
+      </div>
+    );
+  }
+
+  return returnValue;
 };

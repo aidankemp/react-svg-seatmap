@@ -108,6 +108,10 @@
     fill: currentColor;
     pointer-events: none;
   }
+
+  &__error {
+    color: #ff0800;
+  }
 }
 
 .seat {
