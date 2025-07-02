@@ -1,6 +1,6 @@
 {
   "name": "react-svg-seatmap",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "React components that render a highly-customizable seatmap based on a provided SVG",
   "keywords": [
     "react",
