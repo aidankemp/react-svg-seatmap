@@ -6,6 +6,7 @@ export const SeatmapInput = ({
   seats,
   value,
   onChange,
+  className,
   svg,
   displayGroupMapping,
   leftControls,
@@ -33,7 +34,7 @@ export const SeatmapInput = ({
         ...seat,
         cssSelector: seat.cssSelector || "",
       })),
-    [seats]
+    [seats],
   );
 
   if (svg) {
@@ -42,16 +43,17 @@ export const SeatmapInput = ({
         availableSeats={availableSeats}
         selectedSeatIds={value}
         svg={svg}
+        className={className}
         onSeatSelect={(seats) =>
           handleChange(
             seats.map((seat) => seat.id),
-            true
+            true,
           )
         }
         onSeatDeselect={(seats) =>
           handleChange(
             seats.map((seat) => seat.id),
-            false
+            false,
           )
         }
         displayGroupMapping={displayGroupMapping}

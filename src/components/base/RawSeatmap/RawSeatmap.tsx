@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { RawSeatmapProps, SeatDisplay } from "./RawSeatmap.types";
 
-import "./RawSeatmap.scss";
+import styles from "./RawSeatmap.module.scss";
 import svgPanZoom from "svg-pan-zoom";
 import _ from "lodash";
+import clsx from "clsx";
 import { usePrevious } from "../../../utils/usePrevious";
 import { SeatmapControl } from "../../../types/SeatmapControl.types";
 
@@ -11,6 +12,7 @@ export const RawSeatmap = ({
   availableSeats,
   selectedSeatIds,
   svg,
+  className,
   onSeatSelect,
   onSeatDeselect,
   onSeatHover,
@@ -31,7 +33,7 @@ export const RawSeatmap = ({
 
   const seatSelected = useCallback(
     (seat: SeatDisplay) => selectedSeatIds && selectedSeatIds.includes(seat.id),
-    [selectedSeatIds]
+    [selectedSeatIds],
   );
 
   const matchingSeat = useCallback(
@@ -43,17 +45,17 @@ export const RawSeatmap = ({
           return false;
         }
       }),
-    [availableSeats]
+    [availableSeats],
   );
 
   const getSVGPanZoom = useCallback(
     () =>
-      svgPanZoom(".seatmap__svg svg", {
+      svgPanZoom(`.${styles.svgContainer} svg`, {
         dblClickZoomEnabled: false,
         mouseWheelZoomEnabled: true,
         zoomScaleSensitivity: 0.5,
       }),
-    []
+    [],
   );
 
   // Fetch the SVG content from the provided URL
@@ -76,13 +78,13 @@ export const RawSeatmap = ({
   const setSeatColour = useCallback(
     (element: SVGElement, seat?: SeatDisplay) => {
       if (seat) {
-        element.classList.remove("seat--unavailable");
+        element.classList.remove(styles.seatUnavailable);
         if (selectedSeatIds?.includes(seat.id)) {
-          element.classList.add("seat--selected");
-          element.classList.remove("seat--available");
+          element.classList.add(styles.seatSelected);
+          element.classList.remove(styles.seatAvailable);
         } else {
-          element.classList.add("seat--available");
-          element.classList.remove("seat--selected");
+          element.classList.add(styles.seatAvailable);
+          element.classList.remove(styles.seatSelected);
         }
 
         // Check if there are custom colours for this seat; If so, apply them.
@@ -91,16 +93,16 @@ export const RawSeatmap = ({
             "style",
             `stroke: ${seat.color} !important;${
               seatSelected(seat) ? " fill: " + seat.color + " !important;" : ""
-            }`
+            }`,
           );
         }
       } else {
-        element.classList.add("seat--unavailable");
-        element.classList.remove("seat--available");
-        element.classList.remove("seat--selected");
+        element.classList.add(styles.seatUnavailable);
+        element.classList.remove(styles.seatAvailable);
+        element.classList.remove(styles.seatSelected);
       }
     },
-    [seatSelected, selectedSeatIds]
+    [seatSelected, selectedSeatIds],
   );
 
   // Set the initial colour of each seat on the SVG
@@ -112,7 +114,7 @@ export const RawSeatmap = ({
 
     if (mapNeedsPainting) {
       const circles = document.querySelectorAll<SVGCircleElement>(
-        ".seatmap__svg circle, .seatmap__svg path, .seatmap__svg ellipse"
+        `.${styles.svgContainer} circle, .${styles.svgContainer} path, .${styles.svgContainer} ellipse`,
       );
 
       circles.forEach((circle) => {
@@ -187,7 +189,7 @@ export const RawSeatmap = ({
     };
 
     const circles = document.querySelectorAll<SVGCircleElement>(
-      ".seatmap__svg circle, .seatmap__svg path, .seatmap__svg ellipse"
+      `.${styles.svgContainer} circle, .${styles.svgContainer} path, .${styles.svgContainer} ellipse`,
     );
 
     circles.forEach((target) => {
@@ -210,6 +212,8 @@ export const RawSeatmap = ({
   }, [
     onSeatDeselect,
     onSeatSelect,
+    onSeatHover,
+    onSeatHoverEnd,
     availableSeats,
     svgString,
     matchingSeat,
@@ -224,7 +228,7 @@ export const RawSeatmap = ({
 
     const changedSeats = availableSeats.filter((seat) => {
       const previousSeat = previousState?.availableSeats.find(
-        (s) => s.id === seat.id
+        (s) => s.id === seat.id,
       );
       return !_.isEqual(seat, previousSeat);
     });
@@ -232,7 +236,7 @@ export const RawSeatmap = ({
     // If the seat has changed, repaint the associated SVG element
     for (const seat of changedSeats) {
       const seatDisplayElement = document.querySelector<SVGElement>(
-        seat.cssSelector
+        seat.cssSelector,
       );
       if (!seatDisplayElement) continue;
       setSeatColour(seatDisplayElement, seat);
@@ -254,12 +258,12 @@ export const RawSeatmap = ({
         .filter(
           (x) =>
             previousState.selectedSeatIds &&
-            !previousState.selectedSeatIds.includes(x)
+            !previousState.selectedSeatIds.includes(x),
         )
         .concat(
           previousState.selectedSeatIds.filter(
-            (x) => !selectedSeatIds.includes(x)
-          )
+            (x) => !selectedSeatIds.includes(x),
+          ),
         );
     }
 
@@ -268,7 +272,7 @@ export const RawSeatmap = ({
       if (!seatDisplay) continue;
 
       const seatDisplayElement = document.querySelector<SVGElement>(
-        seatDisplay.cssSelector
+        seatDisplay.cssSelector,
       );
 
       if (!seatDisplayElement) continue;
@@ -284,21 +288,20 @@ export const RawSeatmap = ({
 
   // Take a SeatmapControl object and return the appropriate JSX element
   // This allows users to specify if the control group should be styled or not
-  const generateSeatmapControl = (control: SeatmapControl) => {
+  const generateSeatmapControl = useCallback((control: SeatmapControl) => {
     if (control && typeof control === "object" && "style" in control) {
       return (
         <div
-          className={
-            "seatmap__action-group" +
-            (control.style === "none" ? " seatmap__action-group--unstyled" : "")
-          }
+          className={clsx(styles.actionGroup, {
+            [styles.actionGroupUnstyled]: control.style === "none",
+          })}
         >
           {control.control}
         </div>
       );
     }
-    return <div className="seatmap__action-group">{control}</div>;
-  };
+    return <div className={styles.actionGroup}>{control}</div>;
+  }, []);
 
   // We need to memoize the main SVG content separately from the rest of the component to ensure
   // that it NEVER changes unless the SVG itself changes.
@@ -308,7 +311,7 @@ export const RawSeatmap = ({
     setMapNeedsPainting(true);
     return (
       <div
-        className="seatmap__svg"
+        className={styles.svgContainer}
         dangerouslySetInnerHTML={{ __html: svgString }}
       />
     );
@@ -332,48 +335,39 @@ export const RawSeatmap = ({
     };
 
     return (
-      <div className="seatmap">
-        <div className="seatmap__actions seatmap__actions--left">
+      <div className={clsx(styles.root, className)}>
+        <div className={`${styles.controls} ${styles.controlsLeft}`}>
           {showZoomControls && (
-            <div className="seatmap__action-group">
+            <div className={styles.actionGroup}>
               <button
                 type="button"
-                className="seatmap__action"
+                className={styles.actionButton}
                 onClick={handleZoomIn}
                 title="Zoom In"
               >
-                <svg
-                  className="seatmap__icon seatmap__icon--zoom-in"
-                  viewBox="0 -960 960 960"
-                >
+                <svg className={styles.icon} viewBox="0 -960 960 960">
                   <title>Zoom In</title>
                   <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
                 </svg>
               </button>
               <button
                 type="button"
-                className="seatmap__action"
+                className={styles.actionButton}
                 onClick={handleZoomReset}
                 title="Reset Zoom"
               >
-                <svg
-                  className="seatmap__icon seatmap__icon--reset"
-                  viewBox="0 -960 960 960"
-                >
+                <svg className={styles.icon} viewBox="0 -960 960 960">
                   <title>Reset zoom</title>
                   <path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z" />
                 </svg>
               </button>
               <button
                 type="button"
-                className="seatmap__action"
+                className={styles.actionButton}
                 onClick={handleZoomOut}
                 title="Zoom Out"
               >
-                <svg
-                  className="seatmap__icon seatmap__icon--zoom-out"
-                  viewBox="0 -960 960 960"
-                >
+                <svg className={styles.icon} viewBox="0 -960 960 960">
                   <title>Zoom Out</title>
                   <path d="M200-440v-80h560v80H200Z" />
                 </svg>
@@ -383,14 +377,16 @@ export const RawSeatmap = ({
           {leftControls?.map((control) => generateSeatmapControl(control))}
         </div>
         {memoizedSvg}
-        <div className="seatmap__actions seatmap__actions--right">
+        <div className={clsx(styles.controls, styles.controlsRight)}>
           {rightControls?.map((control) => generateSeatmapControl(control))}
         </div>
       </div>
     );
   }, [
+    className,
     leftControls,
     rightControls,
+    generateSeatmapControl,
     getSVGPanZoom,
     memoizedSvg,
     showZoomControls,
@@ -399,8 +395,8 @@ export const RawSeatmap = ({
   // If the SVG could not be fetched, return an error message
   if (svgFetchingError) {
     return (
-      <div className="seatmap">
-        <div className="seatmap__error">
+      <div className={clsx(styles.root, className)}>
+        <div className={styles.error}>
           ERROR: Unable to fetch SVG from the given URL: {svg}
         </div>
       </div>

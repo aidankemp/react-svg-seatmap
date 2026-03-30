@@ -6,6 +6,7 @@ export interface SeatmapAccordionProps {
   seats: Seat[]; // You can think of this as the "options" for the seatmap
   onClick?: (seatId: number, selected: boolean) => void;
   selectedSeatIds?: number[];
+  className?: string;
   svg?: string;
   displayGroupMapping?: Record<string, string | ReactNode>;
   leftControls?: SeatmapControl[];

@@ -6,6 +6,7 @@ export interface SeatmapInputProps {
   seats: Seat[]; // You can think of this as the "options" for the seatmap
   onChange?: (value: number[]) => void; // Since this is a controlled component, this function is for updating the value of the input
   value?: number[]; // This is the IDs of all the seats that should be currently selected
+  className?: string;
   svg?: string;
   displayGroupMapping?: Record<string, string | ReactNode>;
   leftControls?: SeatmapControl[];

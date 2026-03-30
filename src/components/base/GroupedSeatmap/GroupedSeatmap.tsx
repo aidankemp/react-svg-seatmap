@@ -4,11 +4,14 @@ import { GroupedSeat, GroupedSeatmapProps } from "./GroupedSeatmap.types";
 import { RawSeatmap } from "../RawSeatmap/RawSeatmap";
 import { SeatDisplay } from "../RawSeatmap/RawSeatmap.types";
 import Selecto from "react-selecto";
+import clsx from "clsx";
+import styles from "../RawSeatmap/RawSeatmap.module.scss";
 
 export const GroupedSeatmap = ({
   availableSeats,
   selectedSeatIds,
   svg,
+  className,
   displayGroupMapping,
   onSeatSelect,
   onSeatDeselect,
@@ -29,7 +32,8 @@ export const GroupedSeatmap = ({
       typeof groupValue === "object"
         ? availableSeats.filter(
             (s) =>
-              sameGroup(s, seat, group) && sameGroup(s, seat, groupValue.parent)
+              sameGroup(s, seat, group) &&
+              sameGroup(s, seat, groupValue.parent),
           )
         : availableSeats.filter((s) => sameGroup(s, seat, group));
 
@@ -39,7 +43,7 @@ export const GroupedSeatmap = ({
   const sameGroup = (
     seatA: GroupedSeat,
     seatB: GroupedSeat,
-    groupName: string
+    groupName: string,
   ) => {
     let seatAGroupValue = seatA.selectionGroups?.[groupName];
     if (typeof seatAGroupValue === "object") {
@@ -77,13 +81,13 @@ export const GroupedSeatmap = ({
     e.added.forEach((element: HTMLElement | SVGElement) => {
       // Find the seat object associated with the selected element
       const seatObject = availableSeats.find((s) =>
-        element.matches(s.cssSelector)
+        element.matches(s.cssSelector),
       );
       if (!seatObject) return;
 
       // Update the styling of the selected seats
-      element.classList.add("seat--selected");
-      element.classList.remove("seat--available");
+      element.classList.add(styles.seatSelected);
+      element.classList.remove(styles.seatAvailable);
 
       // Add the selected seat to the list of selected seats
       selectedSeats.push(seatObject);
@@ -99,12 +103,12 @@ export const GroupedSeatmap = ({
     removed: (HTMLElement | SVGElement)[];
   }) => {
     e.added.forEach((element: HTMLElement | SVGElement) => {
-      element.classList.add("seat--selected");
-      element.classList.remove("seat--available");
+      element.classList.add(styles.seatSelected);
+      element.classList.remove(styles.seatAvailable);
     });
     e.removed.forEach((element: HTMLElement | SVGElement) => {
-      element.classList.remove("seat--selected");
-      element.classList.add("seat--available");
+      element.classList.remove(styles.seatSelected);
+      element.classList.add(styles.seatAvailable);
     });
   };
 
@@ -115,13 +119,13 @@ export const GroupedSeatmap = ({
 
     // Update the styling of the hovered seat
     const seatElement = document.querySelector<SVGElement>(
-      seatObject.cssSelector
+      seatObject.cssSelector,
     );
     if (!seatElement) return;
     if (hoverStart) {
-      seatElement.classList.add("seat--hover");
+      seatElement.classList.add(styles.seatHover);
     } else {
-      seatElement.classList.remove("seat--hover");
+      seatElement.classList.remove(styles.seatHover);
     }
 
     // If group selection is enabled, add the hover effect to all seats in the current group
@@ -130,13 +134,13 @@ export const GroupedSeatmap = ({
 
       for (const groupSeat of groupSeats) {
         const groupSeatElement = document.querySelector<SVGElement>(
-          groupSeat.cssSelector
+          groupSeat.cssSelector,
         );
         if (!groupSeatElement) continue;
         if (hoverStart) {
-          groupSeatElement.classList.add("seat--hover");
+          groupSeatElement.classList.add(styles.seatHover);
         } else {
-          groupSeatElement.classList.remove("seat--hover");
+          groupSeatElement.classList.remove(styles.seatHover);
         }
       }
     }
@@ -159,7 +163,7 @@ export const GroupedSeatmap = ({
             : undefined,
         selected: false,
       })),
-    [availableSeats, displayGroupMapping]
+    [availableSeats, displayGroupMapping],
   );
 
   const selectionControls = useMemo(() => {
@@ -175,7 +179,7 @@ export const GroupedSeatmap = ({
 
       // Remove duplicates and filter out undefined values
       const uniqueGroups = Array.from(new Set(groups)).filter(
-        (group) => group !== undefined
+        (group) => group !== undefined,
       );
 
       selectionControls.push(
@@ -183,12 +187,10 @@ export const GroupedSeatmap = ({
           <button
             key={group}
             type="button"
-            className={
-              "seatmap__action" +
-              (selectionMethod === "group" && currentGroup === group
-                ? " seatmap__action--selected"
-                : "")
-            }
+            className={clsx(styles.actionButton, {
+              [styles.actionButtonSelected]:
+                selectionMethod === "group" && currentGroup === group,
+            })}
             onClick={() => {
               if (selectionMethod === "group" && currentGroup === group) {
                 setSelectionMethod(null);
@@ -201,7 +203,7 @@ export const GroupedSeatmap = ({
           >
             {Array.from(group)[0]}
           </button>
-        ))
+        )),
       );
     }
 
@@ -211,10 +213,9 @@ export const GroupedSeatmap = ({
         <button
           key="multi-select"
           type="button"
-          className={
-            "seatmap__action" +
-            (selectionMethod === "drag" ? " seatmap__action--selected" : "")
-          }
+          className={clsx(styles.actionButton, {
+            [styles.actionButtonSelected]: selectionMethod === "drag",
+          })}
           onClick={() =>
             selectionMethod === "drag"
               ? setSelectionMethod(null)
@@ -222,14 +223,11 @@ export const GroupedSeatmap = ({
           }
           title="Lasso select"
         >
-          <svg
-            className="seatmap__icon seatmap__icon--zoom-in"
-            viewBox="0 -960 960 960"
-          >
+          <svg className={styles.icon} viewBox="0 -960 960 960">
             <title>Lasso select</title>
             <path d="m161-516-80-8q6-46 20.5-89.5T141-696l68 42q-20 31-31.5 66T161-516Zm36 316q-33-32-57-70.5T101-352l76-26q12 35 31 65.5t45 56.5l-56 56Zm110-552-42-68q39-25 82.5-39.5T437-880l8 80q-37 5-72 16.5T307-752ZM479-82q-35 0-69.5-5.5T343-106l26-76q27 9 54 14.5t56 5.5v80Zm226-626q-26-26-56.5-45T583-784l26-76q43 15 81.5 39t70.5 57l-56 56Zm86 594L679-226v104h-80v-240h240v80H735l112 112-56 56Zm8-368q0-29-5.5-56T779-592l76-26q13 32 18.5 66.5T879-482h-80Z" />
           </svg>
-        </button>
+        </button>,
       );
     }
 
@@ -263,7 +261,9 @@ export const GroupedSeatmap = ({
           // The area to drag selection element (default: container)
           dragContainer={window}
           // Targets to select. You can register a queryselector or an Element.
-          selectableTargets={[".seatmap__svg .seat--available"]}
+          selectableTargets={[
+            `.${styles.svgContainer} .${styles.seatAvailable}`,
+          ]}
           // Whether to select by click (default: true)
           selectByClick={false}
           // Whether to select from the target inside (default: true)
@@ -282,6 +282,7 @@ export const GroupedSeatmap = ({
       )}
       <RawSeatmap
         svg={svg}
+        className={className}
         availableSeats={availableSeatDisplays}
         selectedSeatIds={selectedSeatIds}
         onSeatSelect={(s) => handleSeatSelect(s, true)}
