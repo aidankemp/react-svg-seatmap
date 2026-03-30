@@ -116,6 +116,7 @@ export default () => {
 | displayGroupMapping | Record<string, string \| ReactNode> <br> For example: <pre>{<br> "A": "#ef857d",<br> "B": "#de5472",<br> "C": "#5a8ef7",<br> "D": "#9b98e5"<br>}</pre> | A mapping object that translates between a display group and a color or icon. If a seat is given a display group value, this object is used to determine how that seat should be displayed |
 | leftControls | ReactNode[] | An array of React components that will be rendered on the top left-hand side of the seatmap. This can be useful for setting up extra controls within the seatmap itself. |
 | rightControls | ReactNode[] | An array of React components that will be rendered on the top right-hand side of the seatmap. This can be useful for setting up extra controls within the seatmap itself. |
+| className | string | Optional class that will be applied to the root element in the seatmap |
 
 **SeatmapAccordion**
 | Name | Type | Description |
@@ -127,6 +128,7 @@ export default () => {
 | displayGroupMapping | Record<string, string \| ReactNode> <br> For example: <pre>{<br> "A": "#ef857d",<br> "B": "#de5472",<br> "C": "#5a8ef7",<br> "D": "#9b98e5"<br>}</pre> | A mapping object that translates between a display group and a color or icon. If a seat is given a display group value, this object is used to determine how that seat should be displayed |
 | leftControls | ReactNode[] | An array of React components that will be rendered on the top left-hand side of the seatmap. This can be useful for setting up extra controls within the seatmap itself. |
 | rightControls | ReactNode[] | An array of React components that will be rendered on the top right-hand side of the seatmap. This can be useful for setting up extra controls within the seatmap itself. |
+| className | string | Optional class that will be applied to the root element in the seatmap |
 
 ## License
 
