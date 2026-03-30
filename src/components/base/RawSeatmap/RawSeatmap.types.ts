@@ -13,6 +13,7 @@ export interface RawSeatmapProps {
   availableSeats: SeatDisplay[];
   selectedSeatIds?: number[]; // Array of selected seat IDs
   svg: string;
+  className?: string;
   showZoomControls?: boolean;
   allowDragAndPan?: boolean;
   leftControls?: SeatmapControl[];

@@ -10,6 +10,7 @@ export interface GroupedSeat {
 
 export interface GroupedSeatmapProps {
   svg: string;
+  className?: string;
   availableSeats: GroupedSeat[];
   selectedSeatIds?: number[]; // Array of selected seat IDs
   displayGroupMapping?: Record<string, string | ReactNode>;

@@ -6,6 +6,7 @@ export const SeatmapAccordion = ({
   seats,
   selectedSeatIds,
   onClick,
+  className,
   svg,
   displayGroupMapping,
   leftControls,
@@ -17,7 +18,7 @@ export const SeatmapAccordion = ({
         ...seat,
         cssSelector: seat.cssSelector || "",
       })),
-    [seats]
+    [seats],
   );
 
   if (svg) {
@@ -26,6 +27,7 @@ export const SeatmapAccordion = ({
         availableSeats={availableSeats}
         selectedSeatIds={selectedSeatIds}
         svg={svg}
+        className={className}
         onSeatSelect={(seats) => {
           if (onClick) onClick(seats.map((seat) => seat.id)[0], true);
         }}
